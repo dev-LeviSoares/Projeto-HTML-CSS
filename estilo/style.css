@@ -2,15 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@100..900&family=Shadows+Into+Light&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 @font-face{
     font-family: 'Android';
     src: url('./pacote-projeto-d010/fontes/idroid.otf') format('opentype');
 }
 
-@font-face{
-    font-family: 'Lemon Milk';
-    src: url('./pacote-projeto-d10/fontes/LemonMilk.otf') format('opentype');
-}
 /*
  Paleta de Cores
 #042940
@@ -39,7 +37,7 @@ Lembre-se de usar '--' antes de declarar a variável
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque:'Bebas Neue',cursive;
     --fonte-android: 'Android', cursive;
-    --fonte-lemonmilk: 'Lemon Milk', cursive;
+    --fonte-fjalla-one: 'Fjalla One', cursive;
 }
 
 /*  O '*' serve como tag global para alterar todo CSS */
@@ -148,17 +146,20 @@ main img{
 
 main h1{
     color: var(--cor2);
-    font-family: var(--fonte-lemonmilk);
-    font-size: 1.8em;
+    font-family: var(--fonte-fjalla-one);
+    font-size: 2em;
+    font-style: normal;
+    font-weight: bold;
 }
 
 main h2{
     color: white;
-    font-family: var(--fonte-lemonmilk);
-    font-size: 1.2em;
+    font-family: var(--fonte-fjalla-one);
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: normal;
     background-image: linear-gradient(to right, var(--cor1), transparent);
     padding: 5px;
-    font-weight: normal;
 }
 
 main img.pequena{ /*Imagens por padrão não são blocos. Você precisa transformar ela em bloco usando o 'display: block;'*/
